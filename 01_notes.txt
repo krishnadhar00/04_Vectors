@@ -1,0 +1,18 @@
+Vectors : It is a dynamic arrays which stores the value at the runtime. we can resize their size whenever we want to insert or delete the element at runtime.
+1. It contains contigous memory allocation.
+2. Include the header file of vector i.e #Include<vector>
+3. Declaration of vector : vector <datatype> vector_name;
+4. In vector we don't want to declare the size.
+5. To find the size in vector we use vector<int>v and v.size() => it gives the size of vector.
+6. With the help of resize operation we can increase the size of vector. v.resize(8) then if we check the size again then now it gives the output as 8. 
+7. capacity >= size of vector. capacity will always increase by the power of 2. whenver the size is going to be greater than capacity then capacity will increase by power of 2.
+8. If someone ask this question that how then tell this answer -> vector allocate the memory at runtime becoz of capacity it always greater than the size.
+9. Add element into vector. => v.push_back(element). element get added at the last in contigous form.
+10. V.insert(position, element) wth of this we can insert the element anywhere by defining its position.
+11. position : relative to the position of first element. and first element of vector can be accessed by v.begin().
+12. v.begin() : gives the starting element of the vector.
+13. v.end() : gives the position where our vector gets end.
+14. let v= {1,2,3} we want to insert the 5 after 2nd element so write => v.insert(v.begin()+2,5);
+15. For deleting the element from the back we use v.pop_back(); and it will remove the element from the last.
+16. If we want to delete the element from the anywhere then we use v.erase(position); again position is related to first element of vector or end element of vetor. like v.erase(v.begin()+2);
+17. If we want to delete all the element from the vector use v.clear();
